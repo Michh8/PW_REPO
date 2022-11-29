@@ -1,7 +1,7 @@
 import classes from './App.module.scss';
 import Header from './components/Header/Header';
 import Feed from './components/Feed/Feed';
-import Organization from './components/organization/Feed_o';
+import Organization from './components/Organization/Feed_o';
 import { useNavigate } from 'react-router-dom';
 import NotFoundView from './views/NotFoundView/NotFoundView';
 import AuthView from './views/AuthView/AuthView';
