@@ -1,5 +1,5 @@
 import Button from '../../Button/Button';
-import classes from './NewPostForm.module.scss';
+import classes from './NewPostform.module.scss';
 import camp from '../../../assets/main/camp.png';
 
 const NewPostForm = ({ onAddPost = () => { } }) => {
