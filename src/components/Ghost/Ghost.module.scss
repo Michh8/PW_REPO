@@ -1,0 +1,43 @@
+@import "../../variables";
+
+
+.Ghost {
+
+    /*ghost button*/
+    color: $theme-accent-color;
+
+    background-color:  rgb(255, 240, 240);
+
+    border: 5px solid $theme-accent-color;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+
+
+
+    //
+
+    width: 150px;
+    padding: 12px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  border-radius: 1rem;
+
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    transform: scale(1.05) rotateZ(2deg);
+    opacity: 0.7;
+
+  }
+
+  &:disabled {
+    color: #bbb;
+    cursor: not-allowed;
+  }
+
+}

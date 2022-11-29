@@ -1,0 +1,45 @@
+@import "./../../variables";
+
+
+.Landing {
+  padding-top: 20rem;
+  background-image: url('../../assets/main/intro.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: right;
+
+  padding: 1rem;
+
+  font-family: Roboto;
+  text-decoration: none;
+
+  display: flex;
+  align-items: left;
+
+  padding: 80px 0px;
+
+
+
+  img {    //padding-top: 10rem;
+
+
+    width: 25rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+}
+
+.acontainer {  padding-top: 20rem;
+
+  display: grid;
+  align-items: left;
+  text-align: justify;
+  flex-direction: column;
+  top: 90%;
+  left: 0px;
+  max-width: 450px;
+  font-family: Roboto;
+  text-decoration: none;
+  color: gray;
+  padding: 4rem;
+}

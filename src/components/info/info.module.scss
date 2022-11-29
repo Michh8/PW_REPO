@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.info {
+    padding: 2rem;
+
+    figure {
+        gap: 2;
+        padding: 0;
+
+        img {
+
+            height: 15rem;
+            object-fit: cover;
+            width: 100%;
+            gap: 0;
+            padding: 0;
+
+        }
+    }
+
+    .ima {
+        object-fit: contain;
+
+    }
+
+    gap: 0;
+    padding: 0;
+
+}

@@ -1,0 +1,75 @@
+@import "./../../variables";
+
+.Footer {
+  bottom:0;
+background-image: url('../../assets/main/Vector.png');
+background-repeat: no-repeat;
+
+  font-family: Roboto;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: $theme-light-color;
+
+  gap: 35rem;
+}
+
+.acontainer  {
+  padding-top: 4rem;
+  display:grid;
+  align-items: left;
+  text-align: justify;
+flex-direction: column;
+  top: 90%;
+  left: 0px;
+  max-width: 450px;
+
+
+  font-family: Roboto;
+  text-decoration: none;
+
+  color: gray;
+
+
+  
+  gap: 2rem;
+}
+.acontainer a{
+  text-decoration: none;
+  color: $theme-light-color;
+
+}
+.logocontainer{
+  display: inline-block;
+  flex-direction: column;
+
+}
+.logocontainer img{
+
+  min-width: 2rem;
+  min-height: 2rem;
+  width: 20rem;
+
+  height: 20rem;
+
+}
+@media screen and (max-width: 640px) {
+  .logocontainer img{
+    max-width: 5rem;
+    max-height: 5rem;
+  
+  
+  }
+  .Footer{
+    gap: 1rem;
+  }
+}
+.abutton{
+  transition: opacity 0.4s ease-in;
+}
+.abutton:hover{
+ opacity: 0.7;
+}

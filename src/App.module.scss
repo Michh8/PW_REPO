@@ -1,0 +1,24 @@
+@import "./variables";
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: rgb(255, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
+  object-fit: contain;
+  main {
+    flex: 1;
+    color: $theme-light-color;
+  }
+}
+
+#test {
+  flex: 1;
+}

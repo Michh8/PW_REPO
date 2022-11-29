@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.Button {
+
+  
+  padding: 0.75rem 3rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: $theme-light-color;
+
+  background: $theme-dark-color;
+  border: none;
+  border-radius: 1rem;
+
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    transform: scale(1.05) rotateZ(2deg);
+    opacity: 0.7;
+
+  }
+
+  &:disabled {
+    color: #bbb;
+    cursor: not-allowed;
+  }
+}

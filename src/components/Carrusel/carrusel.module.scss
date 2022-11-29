@@ -1,0 +1,106 @@
+.user-image{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-photo{
+    border-radius: 45px;
+    width: 80px;
+}
+.user-testimonial{
+    font-size: large;
+}
+
+
+/*Spaces cards*/
+@import "../../mixins";
+@import "../../variables";
+
+
+.Card{
+    position:unset;
+
+    display: flex;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    .space-card{
+        align-items: center;
+    text-align: center;
+        @include flex-card(25rem, 23rem, 2rem, 2rem, $wrapped:true);
+        gap: 2rem;
+        //position: relative;
+    
+        figure{
+            width: 4rem;
+            height: 4rem;
+            //position: absolute;
+            top: -1.5rem;
+            left: 2rem;
+            position: unset;
+            img{
+                position: unset;
+                @include images();
+            }
+        }
+    
+        h3{
+            
+            @include texts($font-primary, 1.75rem, center, $heading-color);
+            color: $theme-accent-color;
+            font-weight: bold;
+            line-height: 2.25rem;
+            padding: 0.5rem 0;
+            position: unset;
+        }
+    
+        p{
+            @include texts($font-primary, 1.05rem, justify, $text-color);
+            line-height: 1.60rem;
+            position: unset;
+        }
+    
+        a{
+            @include texts($font-anchor, 1.15rem, center, $color-accent);
+            align-self: flex-end;
+            position: unset;
+        }
+    }
+    
+    
+}
+
+
+
+#app { height: 100% }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.sw{
+    img{
+        position:unset;
+    }
+    position:unset;
+ }

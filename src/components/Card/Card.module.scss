@@ -1,0 +1,78 @@
+
+/*Spaces cards*/
+@import "../../mixins";
+@import "../../variables";
+
+
+.Card{
+    position:unset;
+
+    display: grid;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    .space-card{
+        position:unset;
+        align-items: center;
+    text-align: center;
+        @include flex-card(25rem, 23rem, 2rem, 2rem, $wrapped:true);
+        gap: 2rem;
+        //position: relative;
+    
+        figure{
+            width: 4rem;
+            height: 4rem;
+            //position: absolute;
+            top: -1.5rem;
+            left: 2rem;
+    
+            img{
+                @include images();
+            }
+        }
+    
+        h3{
+            
+            @include texts($font-primary, 1.75rem, center, $heading-color);
+            color: $theme-accent-color;
+            font-weight: bold;
+            line-height: 2.25rem;
+            padding: 0.5rem 0;
+        }
+    
+        p{
+            @include texts($font-primary, 1.05rem, justify, $text-color);
+            line-height: 1.60rem;
+        }
+    
+        a{
+            @include texts($font-anchor, 1.15rem, center, $color-accent);
+            align-self: flex-end;
+        }
+    }
+    figure {
+        gap: 2;
+        padding: 0;
+
+        img {
+
+            height: 20rem;
+            object-fit: cover;
+            width: 100%;
+            gap: 0;
+            padding: 0;
+
+        }
+    }
+    .ima {
+        object-fit: contain;
+
+    }
+    .Cards{
+        padding-left: 10rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
