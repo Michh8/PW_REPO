@@ -18,7 +18,8 @@
     "react-router-dom": "^6.4.3",
     "react-toastify": "^9.1.1",
     "sass": "^1.56.1",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "vercel": "^28.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
