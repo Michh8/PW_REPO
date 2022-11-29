@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 import axios from 'axios';
-axios.defaults.baseURL = import.meta.env.VITE_APIENDPOINT || "https://wpproject-production.up.railway.app/";
+axios.defaults.baseURL = import.meta.env.VITE_APIENDPOINT || "https://solidaria-api.up.railway.app/";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
